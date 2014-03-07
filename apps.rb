@@ -4,7 +4,7 @@ dep "ack.bin" do
   installs "ack"
 end
 dep "android.bin" do
-  installs "android-sdk"
+  installs "android"
 end
 dep "autoconf.bin" do
   installs "autoconf"
@@ -72,6 +72,9 @@ end
 dep "the_silver_searcher.bin" do
   installs "the_silver_searcher"
 end
+dep "tig.bin" do
+  installs "tig"
+end
 dep "tmux.bin" do
   installs "tmux"
 end
@@ -87,7 +90,7 @@ end
 
 dep "all-packaged-apps" do
   requires "ack.bin"
-  requires "android-sdk.bin"
+  requires "android.bin"
   requires "autoconf.bin"
   requires "automake.bin"
   requires "cscope.bin"
@@ -111,6 +114,7 @@ dep "all-packaged-apps" do
   requires "reattach-to-user-namespace.bin"
   requires "the_silver_searcher.bin"
   requires "tmux.bin"
+  requires "tig.bin"
   requires "vim.bin"
   requires "xz.bin"
   requires "zsh.bin"
