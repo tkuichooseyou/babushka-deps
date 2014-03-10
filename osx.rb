@@ -6,6 +6,10 @@ dep "Dropbox.app" do
   source "https://www.dropbox.com/download?plat=mac"
 end
 
+dep "Firefox.app" do
+  source "https://download-installer.cdn.mozilla.net/pub/firefox/releases/27.0.1/mac/en-US/Firefox%2027.0.1.dmg"
+end
+
 dep "Google Chrome.app" do
   source "https://dl.google.com/chrome/mac/stable/CHFA/googlechrome.dmg"
 end
@@ -28,6 +32,7 @@ end
 
 dep "osx" do
   requires "Dropbox.app"
+  requires "Firefox.app"
   requires "Google Chrome.app"
   requires "KeePassX.app"
   requires "iTerm.app"
