@@ -2,6 +2,10 @@
 
 # osx apps
 
+dep "Android File Transfer.app" do
+  source "https://dl.google.com/dl/androidjumper/mtp/502266/androidfiletransfer.dmg"
+end
+
 dep "Dropbox.app" do
   source "https://www.dropbox.com/download?plat=mac"
 end
@@ -14,12 +18,16 @@ dep "Google Chrome.app" do
   source "https://dl.google.com/chrome/mac/stable/CHFA/googlechrome.dmg"
 end
 
+dep "iTerm.app" do
+  source "http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip"
+end
+
 dep "KeePassX.app" do
   source "https://www.keepassx.org/releases/KeePassX-0.4.3.dmg"
 end
 
-dep "iTerm.app" do
-  source "http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip"
+dep "PCKeyboardHack.app" do
+  source "https://pqrs.org/macosx/keyremap4macbook/files/PCKeyboardHack-10.5.0.dmg"
 end
 
 dep "Skype.app" do
@@ -31,11 +39,13 @@ dep "Sublime Text.app" do
 end
 
 dep "osx" do
+  requires "Android File Transfer.app"
   requires "Dropbox.app"
   requires "Firefox.app"
   requires "Google Chrome.app"
-  requires "KeePassX.app"
   requires "iTerm.app"
+  requires "KeePassX.app"
+  requires "PCKeyboardHack.app"
   requires "Skype.app"
   requires "Sublime Text.app"
   requires "auto-hide-dock"

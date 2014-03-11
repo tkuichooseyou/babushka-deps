@@ -18,6 +18,9 @@ end
 dep "git.bin" do
   installs "git"
 end
+dep "heroku.bin" do
+  installs "heroku-toolbelt"
+end
 dep "node.bin" do
   installs "node"
 end
@@ -41,6 +44,7 @@ dep "brew-apps" do
   requires "automake.bin"
   requires "ctags.bin"
   requires "git.bin"
+  requires "heroku.bin"
   requires "node.bin"
   requires "openssl.bin"
   requires "tig.bin"
