@@ -38,6 +38,10 @@ dep "Sublime Text.app" do
   source "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203059.dmg"
 end
 
+dep "VLC.app" do
+  source "http://mirror.csclub.uwaterloo.ca/vlc/vlc/2.1.4/macosx/vlc-2.1.4.dmg"
+end
+
 dep "osx" do
   requires "Android File Transfer.app"
   requires "Dropbox.app"
@@ -48,6 +52,7 @@ dep "osx" do
   requires "PCKeyboardHack.app"
   requires "Skype.app"
   requires "Sublime Text.app"
+  requires "VLC.app"
   requires "auto-hide-dock"
 end
 
