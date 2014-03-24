@@ -3,7 +3,7 @@
 dep "ack.bin" do
   installs "ack"
 end
-dep "android.bin" do
+dep "android-sdk.bin" do
   installs "android"
 end
 dep "autoconf.bin" do
@@ -39,7 +39,7 @@ end
 
 dep "brew-apps" do
   requires "ack.bin"
-  requires "android.bin"
+  requires "android-sdk.bin"
   requires "autoconf.bin"
   requires "automake.bin"
   requires "ctags.bin"
