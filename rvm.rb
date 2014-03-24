@@ -4,7 +4,7 @@ dep 'rvm' do
   }
 
   meet {
-    shell 'bash -c "`curl https://rvm.beginrescueend.com/install/rvm`"'
+    shell '\curl -sSL https://get.rvm.io | bash'
     shell "echo \"
 # RVM
 [[ -s '/Users/`whoami`/.rvm/scripts/rvm' ]] && source '/Users/`whoami`/.rvm/scripts/rvm'\" >> /etc/bashrc
