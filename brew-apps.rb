@@ -4,7 +4,7 @@ dep "ack.bin" do
   installs "ack"
 end
 dep "android-sdk.bin" do
-  installs "android"
+  installs "android-sdk"
 end
 dep "autoconf.bin" do
   installs "autoconf"
