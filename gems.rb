@@ -3,7 +3,7 @@ dep "compass.gem" do
 end
 
 dep "cocoapods.gem" do
-  installs "cocoapod"
+  installs "cocoapods"
 end
 
 dep "gems" do
