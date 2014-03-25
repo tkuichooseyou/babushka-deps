@@ -1,8 +1,8 @@
 dep 'amplify' do
   requires 'dev',
     'homebrew',
+    'rvm',
     'cocoapods.gem',
-    "git.bin",
-    'rvm'
+    "git.bin"
 end
 
