@@ -1,10 +1,10 @@
 dep 'bootstrap' do
-  requires 'brew-apps',
+  requires 'homebrew',
+    'brew-apps',
     'dev',
     'gems',
     'npm',
     'osx',
     'ruby',
-    'rvm',
-    'homebrew'
+    'rvm'
 end
