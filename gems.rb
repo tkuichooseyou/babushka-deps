@@ -7,7 +7,13 @@ dep "cocoapods.gem" do
   provides "pod"
 end
 
+dep "xcpretty.gem" do
+  installs "xcpretty"
+  provides "xcpretty"
+end
+
 dep "gems" do
   requires "compass.gem"
   requires "cocoapods.gem"
+  requires "xcpretty.gem"
 end
