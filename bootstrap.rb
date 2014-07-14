@@ -3,6 +3,7 @@ dep 'bootstrap' do
     'brew-apps',
     'dev',
     'gems',
+    'ios',
     'npm',
     'osx',
     'ruby',
