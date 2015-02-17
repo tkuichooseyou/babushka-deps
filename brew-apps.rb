@@ -3,14 +3,14 @@
 dep "ack.bin" do
   installs "ack"
 end
-dep "android-sdk.bin" do
-  installs "android-sdk"
-end
 dep "autoconf.bin" do
   installs "autoconf"
 end
 dep "automake.bin" do
   installs "automake"
+end
+dep "carthage.bin" do
+  installs "carthage"
 end
 dep "ctags.bin" do
   installs "ctags"
@@ -20,6 +20,9 @@ dep "git.bin" do
 end
 dep "heroku.bin" do
   installs "heroku-toolbelt"
+end
+dep "macvim.bin" do
+  provides "mvim"
 end
 dep "node.bin" do
   installs "node"
@@ -39,12 +42,13 @@ end
 
 dep "brew-apps" do
   requires "ack.bin"
-  requires "android-sdk.bin"
   requires "autoconf.bin"
   requires "automake.bin"
+  requires "carthage.bin"
   requires "ctags.bin"
   requires "git.bin"
   requires "heroku.bin"
+  requires "macvim.bin"
   requires "node.bin"
   requires "openssl.bin"
   requires "tig.bin"
