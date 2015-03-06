@@ -22,5 +22,6 @@ end
 dep "gems" do
   requires "compass.gem"
   requires "cocoapods.gem"
+  requires "nomad-cli.gem"
   requires "xcpretty.gem"
 end
