@@ -12,6 +12,13 @@ dep "xcpretty.gem" do
   provides "xcpretty"
 end
 
+dep "nomad-cli.gem" do
+  installs "nomad-cli"
+  ['ios', 'apn', 'pk', 'iap', 'ipa'].each do |tool|
+    provides tool
+  end
+end
+
 dep "gems" do
   requires "compass.gem"
   requires "cocoapods.gem"
