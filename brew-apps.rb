@@ -30,6 +30,9 @@ end
 dep "openssl.bin" do
   installs "openssl"
 end
+dep "reattach-to-user-namespace.bin" do
+  installs "reattach-to-user-namespace.bin"
+end
 dep "tig.bin" do
   installs "tig"
 end
@@ -51,6 +54,7 @@ dep "brew-apps" do
   requires "macvim.bin"
   requires "node.bin"
   requires "openssl.bin"
+  requires "reattach-to-user-namespace.bin"
   requires "tig.bin"
   requires "vim.bin"
   requires "zsh.bin"
