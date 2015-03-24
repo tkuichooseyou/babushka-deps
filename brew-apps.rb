@@ -39,6 +39,9 @@ end
 dep "vim.bin" do
   installs "vim"
 end
+dep "xctester.bin" do
+  installs "xctester"
+end
 dep "zsh.bin" do
   installs "zsh"
 end
@@ -57,5 +60,6 @@ dep "brew-apps" do
   requires "reattach-to-user-namespace.bin"
   requires "tig.bin"
   requires "vim.bin"
+  requires "xctester.bin"
   requires "zsh.bin"
 end
