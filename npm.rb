@@ -1,17 +1,11 @@
+dep "bower.npm"
 dep "generator-angular.npm"
 dep "generator-angular-fullstack.npm"
-
-dep "sails.npm" do
-  installs "sails"
-end
-
-dep "yo.npm" do
-  installs "yo"
-end
+dep "yo.npm"
 
 dep "npm" do
+  requires "bower.npm"
   requires "generator-angular.npm"
   requires "generator-angular-fullstack.npm"
-  requires "sails.npm"
   requires "yo.npm"
 end
