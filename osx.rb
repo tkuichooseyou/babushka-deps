@@ -7,7 +7,7 @@ dep "Flux.app" do
 end
 
 dep "iTerm.app" do
-  source "http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip"
+  source "https://iterm2.com/downloads/beta/iTerm2-3_0_2.zip"
 end
 
 dep "Seil.app" do
