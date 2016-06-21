@@ -1,11 +1,5 @@
-dep "bower.npm"
-dep "generator-angular.npm"
-dep "generator-angular-fullstack.npm"
-dep "yo.npm"
+dep "react-native-cli.npm"
 
 dep "npm" do
-  requires "bower.npm"
-  requires "generator-angular.npm"
-  requires "generator-angular-fullstack.npm"
-  requires "yo.npm"
+  requires "react-native-cli.npm"
 end
