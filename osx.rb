@@ -7,10 +7,6 @@ dep "Flux.app" do
   source "https://justgetflux.com/mac/Flux.zip"
 end
 
-dep "HWMonitor.installer" do
-  source "http://hwsensors.com/content/01-releases/39-release-1394/HWSensors.6.18.1394.pkg"
-end
-
 dep "iTerm.app" do
   source "https://iterm2.com/downloads/beta/iTerm2-3_0_2.zip"
 end
@@ -25,7 +21,6 @@ end
 
 dep "osx" do
   requires "Flux.app"
-  requires "HWMonitor.app"
   requires "iTerm.app"
   requires "Karabiner.app"
   requires "VLC.app"
