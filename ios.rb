@@ -10,6 +10,7 @@ end
 
 dep "ios" do
   requires "cocoapods.gem"
+  requires "update_xcode_plugins.gem"
   requires "xcpretty.gem"
   requires "Alcatraz Package Manager"
 end
