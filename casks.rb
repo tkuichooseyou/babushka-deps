@@ -1,4 +1,3 @@
-# Casks
 dep "brew-cask", :template => "managed" do
   met? {
     `brew cask`.include? "Caskroom"
@@ -7,6 +6,10 @@ end
 
 dep "flux", :template => "personal:cask" do
   cask "flux"
+end
+
+dep "haskell-platform", :template => "personal:cask" do
+  cask 'haskell-platform'
 end
 
 dep "iterm2", :template => "personal:cask" do
@@ -24,6 +27,7 @@ end
 dep "casks" do
   requires "brew-cask"
   requires "flux"
+  requires "haskell-platform"
   requires "iterm2"
   requires "karabiner"
   requires "vlc"
