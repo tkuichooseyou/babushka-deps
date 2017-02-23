@@ -20,6 +20,10 @@ dep "karabiner", :template => "personal:cask" do
   cask "karabiner"
 end
 
+dep "shiftit", :template => "personal:cask" do
+  cask "shiftit"
+end
+
 dep "vlc", :template => "personal:cask" do
   cask "vlc"
 end
@@ -30,6 +34,7 @@ dep "casks" do
   requires "haskell-platform"
   requires "iterm2"
   requires "karabiner"
+  requires "shiftit"
   requires "vlc"
 end
 
