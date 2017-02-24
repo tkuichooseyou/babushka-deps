@@ -1,35 +1,28 @@
-dep "brew-cask", :template => "managed" do
-  met? {
-    `brew cask`.include? "Caskroom"
-  }
-end
-
-dep "flux", :template => "personal:cask" do
+dep "flux", :template => "cask" do
   cask "flux"
 end
 
-dep "haskell-platform", :template => "personal:cask" do
+dep "haskell-platform", :template => "cask" do
   cask 'haskell-platform'
 end
 
-dep "iterm2", :template => "personal:cask" do
+dep "iterm2", :template => "cask" do
   cask "iterm2"
 end
 
-dep "karabiner", :template => "personal:cask" do
+dep "karabiner", :template => "cask" do
   cask "karabiner"
 end
 
-dep "shiftit", :template => "personal:cask" do
+dep "shiftit", :template => "cask" do
   cask "shiftit"
 end
 
-dep "vlc", :template => "personal:cask" do
+dep "vlc", :template => "cask" do
   cask "vlc"
 end
 
 dep "casks" do
-  requires "brew-cask"
   requires "flux"
   requires "haskell-platform"
   requires "iterm2"
