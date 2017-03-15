@@ -8,10 +8,15 @@ end
 
 dep "iterm2", :template => "cask" do
   cask "iterm2"
+  provides "iTerm"
 end
 
-dep "karabiner", :template => "cask" do
-  cask "karabiner"
+dep "karabiner-elements", :template => "cask" do
+  cask "karabiner-elements"
+end
+
+dep "keybase", :template => "cask" do
+  cask "keybase"
 end
 
 dep "shiftit", :template => "cask" do
@@ -27,6 +32,7 @@ dep "casks" do
   requires "haskell-platform"
   requires "iterm2"
   requires "karabiner"
+  requires "keybase"
   requires "shiftit"
   requires "vlc"
 end

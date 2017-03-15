@@ -1,19 +1,20 @@
 meta :cask do
   accepts_value_for :cask
-
-  def ensure_cask
-    return if `brew tap`.include?(cask)
-    shell "brew tap #{cask}"
-  end
+  accepts_value_for :provides
 
   template {
     meet {
-      ensure_cask
       shell "brew cask install #{name}"
     }
 
     met? {
-      `brew cask list`.include? name
+      has_cask_or_application(provides || name)
     }
   }
+
+  private
+
+  def has_cask_or_application(name)
+    `brew cask list`.include?(name) || File.exists?("/Applications/#{name}.app")
+  end
 end
