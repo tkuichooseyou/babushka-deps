@@ -1,3 +1,7 @@
+dep "charles", :template => "cask" do
+  cask "charles"
+end
+
 dep "flux", :template => "cask" do
   cask "flux"
 end
@@ -28,10 +32,11 @@ dep "vlc", :template => "cask" do
 end
 
 dep "casks" do
+  requires "charles"
   requires "flux"
   requires "haskell-platform"
   requires "iterm2"
-  requires "karabiner"
+  requires "karabiner-elements"
   requires "keybase"
   requires "shiftit"
   requires "vlc"

@@ -15,6 +15,7 @@ dep "reattach-to-user-namespace.bin"
 dep "tig.bin"
 dep "vim.bin"
 dep "watchman.bin"
+dep "youtube-dl.bin"
 dep "zsh.bin"
 
 dep "brew-apps" do
@@ -32,5 +33,6 @@ dep "brew-apps" do
   requires "tig.bin"
   requires "vim.bin"
   requires "watchman.bin"
+  requires "youtube-dl.bin"
   requires "zsh.bin"
 end
