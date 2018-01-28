@@ -3,10 +3,8 @@ dep 'bootstrap' do
     'brew-apps',
     'dev',
     'extensions',
-    'haskell',
     'rvm',
     'gems',
     'ios',
-    'npm',
     'osx'
 end
