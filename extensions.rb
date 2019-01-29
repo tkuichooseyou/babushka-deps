@@ -24,8 +24,6 @@ dep "stylish.extension" do
 end
 
 dep "extensions" do
-  requires "pocket.extension"
-  requires "ublock.extension"
   requires "safarikai.extension"
   requires "1password.extension"
   requires "stylish.extension"

@@ -10,6 +10,6 @@ end
 # osx settings
 dep "auto-hide-dock" do
   met? {
-    shell("defaults read com.apple.dock autohide") == "1"
+    shell("defaults read com.apple.dock autohide-time-modifier") == "0"
   }
 end

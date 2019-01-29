@@ -6,7 +6,7 @@ dep "automake.bin"
 dep "briss.bin"
 dep "ctags.bin"
 dep "fasd.bin"
-dep "flow.bin"
+dep "fpp.bin"
 dep "git.bin"
 
 dep "node.bin"
