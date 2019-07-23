@@ -10,6 +10,10 @@ dep "firefox", template: "cask" do
   cask "firefox"
 end
 
+dep "iina", template: "cask" do
+  cask "iina"
+end
+
 dep "iterm2", template: "cask" do
   cask "iterm2"
   provides "iTerm"
@@ -36,6 +40,7 @@ dep "casks" do
   requires "firefox"
   requires "flux"
   requires "iterm2"
+  requires "iina"
   requires "karabiner-elements"
   requires "keybase"
   requires "shiftit"
