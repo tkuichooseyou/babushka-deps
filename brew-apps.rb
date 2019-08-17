@@ -25,7 +25,6 @@ dep "brew-apps" do
   requires "briss.bin"
   requires "ctags.bin"
   requires "fasd.bin"
-  requires "flow.bin"
   requires "git.bin"
   requires "node.bin"
   requires "openssl.bin"
