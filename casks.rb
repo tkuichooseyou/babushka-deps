@@ -1,3 +1,11 @@
+dep "1password", template: "cask" do
+  cask "1password"
+end
+
+dep "anki", template: "cask" do
+  cask "anki"
+end
+
 dep "charles", template: "cask" do
   cask "charles"
 end
@@ -36,6 +44,8 @@ dep "vlc", template: "cask" do
 end
 
 dep "casks" do
+  requires "1password"
+  requires "anki"
   requires "charles"
   requires "dash"
   requires "firefox"

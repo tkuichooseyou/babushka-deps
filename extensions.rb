@@ -18,14 +18,8 @@ dep "1password.extension" do
   provides "1Password-4.6.2.safariextz"
 end
 
-dep "stylish.extension" do
-  source "http://sobolev.us/download/stylish/stylish.safariextz"
-  provides "stylish.safariextz"
-end
-
 dep "extensions" do
   requires "safarikai.extension"
   requires "1password.extension"
-  requires "stylish.extension"
 end
 
