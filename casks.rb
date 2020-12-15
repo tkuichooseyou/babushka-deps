@@ -31,8 +31,8 @@ dep "karabiner-elements", template: "cask" do
   cask "karabiner-elements"
 end
 
-dep "shiftit", template: "cask" do
-  cask "shiftit"
+dep "hammerspoon", template: "cask" do
+  cask "hammerspoon"
 end
 
 dep "spotify", template: "cask" do
@@ -52,7 +52,7 @@ dep "casks" do
   requires "flux"
   requires "iterm2"
   requires "karabiner-elements"
-  requires "shiftit"
+  requires "hammerspoon"
   requires "spotify"
   requires "vlc"
 end
